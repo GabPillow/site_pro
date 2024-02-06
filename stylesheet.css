@@ -1,27 +1,45 @@
 body {
     background-color: #7bb2af;
     display :grid;
-    grid-template-columns: 1000px auto;
-    grid-template-rows: auto;
+    grid-template-columns: 100px 1000px auto;
+    grid-template-rows: 120px 120px auto auto;
     grid-template-areas: 
-    "header ."
-    "subheader cv"
-    "main main"
-    "credit credit";
+    "header title cv"
+    "header subheader cv"
+    "header main main"
+    "header credit credit";
     margin-left: 0;
     margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.header {
+    display: grid;
+    background-color : rgba(36, 93, 131, 0.719);
+    grid-area : header;
+    box-shadow: 0px 1px 20px 10px rgba(36, 93, 131, 0.719);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "home"
+    "profil"
+    "cv"
+    "github"
+    "projets";
 }
 
 .presentation {
     color :aliceblue;
     position: relative;
-    left: 140px;
+    margin-left: 40px;
 }
 
 h1 {
     font-size: 80px;
     font-family: 'Space Mono';
-    grid-area: header;
+    grid-area: title;
 }
 
 .p1 {
