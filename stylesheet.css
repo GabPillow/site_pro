@@ -1,17 +1,14 @@
 body {
     background-color: #7bb2af;
     display :grid;
-    grid-template-columns: 100px 1000px auto;
-    grid-template-rows: 120px 120px auto auto;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 120px 120px 100vh 200px;
     grid-template-areas: 
     "header title cv"
     "header subheader cv"
     "header main main"
     "header credit credit";
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-top: 0;
+    margin : 0;
 }
 
 .header {
@@ -32,7 +29,6 @@ body {
 
 .presentation {
     color :aliceblue;
-    position: relative;
     margin-left: 40px;
 }
 
@@ -52,28 +48,24 @@ h1 {
     font-size: 40px;
     font-family: 'Quicksand';
     grid-area: main;
+    margin-top: 100px;
 }
 
 .cvbox {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-left: 30%;
     justify-self: start;
     grid-area: cv;
     display : grid;
-    grid-template-columns: auto;
-    grid-template-rows: 85px auto;
-    grid-template-areas: 
-    "icone texte";
+    grid-template-columns: auto auto;
+    grid-template-rows: 85px 85px 85px;
 }
 
-.a1 {
-    grid-area: icone;
-}
-
-.p3 {
+.it1 {
     font-family: 'Space Mono';
-    grid-area: texte;
     font-size: 30px;
     margin-left: 10px;
+    margin-top: 0px;
 }
 
 .credit {
