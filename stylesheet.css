@@ -1,14 +1,13 @@
 body {
+    margin: 0;
+}
+
+.bodyindex {
     background-color: #7bb2af;
-    display :grid;
-    grid-template-columns: auto;
-    grid-template-rows: 120px 120px 100vh 200px;
-    grid-template-areas: 
-    "title cv"
-    "subheader cv"
-    "main main"
-    "credit credit";
-    margin : 0;
+}
+
+.bodyprofil {
+    background-color: #FFFDD0;
 }
 
 .header {
@@ -19,11 +18,31 @@ body {
     display: grid;
     background-color : rgba(36, 93, 131, 0.719);
     grid-template-columns: 100px;
-    grid-template-rows: 100px 50px 50px 50px 50px 50px;
+    grid-template-rows: 100px 50px 50px 50px 50px;
 }
 
 .titleheader {
+    color: antiquewhite;
+    font-family: 'Space Mono';
+    text-decoration: none;
+    font-weight: bold;
     place-self: center;
+}
+
+.middle {
+    display :grid;
+    grid-template-columns: auto;
+    grid-template-rows: 120px 120px auto 300px;
+    grid-template-areas: 
+    "title ."
+    "subheader ."
+    "main main"
+    "cv cv";
+}
+
+.middleprofil {
+    display: grid;
+    margin-left: 20%;
 }
 
 .logoheader {
@@ -57,28 +76,42 @@ h1 {
 
 .cvbox {
     margin-top: 5%;
-    margin-left: 30%;
-    justify-self: start;
+    justify-self: center;
+    justify-items: center;
     grid-area: cv;
     display : grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 85px 85px 85px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 50px 30px;
 }
 
 .it1 {
     font-family: 'Space Mono';
     font-size: 30px;
-    margin-left: 10px;
     margin-top: 0px;
+    font-weight: bold;
+    color: antiquewhite;
 }
 
 .credit {
+    height: 200px;
     background-color: rgb(53, 48, 48);
-    grid-area: credit;
 }
 
 .footertexte {
     color: aliceblue;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.leftinfo {
+}
+
+.rightinfo {
+    margin-left: 50%;
+}
+
+.borderinfo {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
 }
