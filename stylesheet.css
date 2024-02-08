@@ -18,7 +18,12 @@ body {
     display: grid;
     background-color : rgba(36, 93, 131, 0.719);
     grid-template-columns: 100px;
-    grid-template-rows: 100px 50px 50px 50px 50px;
+    grid-template-rows: 100px 50px 50px 50px 70px 70px;
+}
+
+.logoheader {
+    border-radius: 25px;
+    background-color: rgba(14, 38, 54, 0.719);
 }
 
 .titleheader {
@@ -27,6 +32,21 @@ body {
     text-decoration: none;
     font-weight: bold;
     place-self: center;
+}
+
+.titleheader:hover {
+    border-bottom: solid;
+}
+
+.picturelinkheader {
+    margin-left: 25%;
+}
+
+.titleprofil {
+    white-space: nowrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 60px;
 }
 
 .middle {
@@ -42,17 +62,13 @@ body {
 
 .middleprofil {
     display: grid;
-    margin-left: 20%;
-}
-
-.logoheader {
-    border-radius: 25px;
-    background-color: rgba(14, 38, 54, 0.719);
+    margin-left: 200px;
 }
 
 .presentation {
     color :aliceblue;
     margin-left: 140px;
+    width : 5000px;
 }
 
 h1 {
@@ -107,11 +123,16 @@ h1 {
 }
 
 .rightinfo {
-    margin-left: 50%;
+    margin-left: 800px;
+}
+
+.fortytwo {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .borderinfo {
     border-style: solid;
-    border-width: 2px;
+    border-width: 5px;
     border-radius: 25px;
 }
