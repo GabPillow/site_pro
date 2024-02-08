@@ -49,10 +49,15 @@ body {
     font-size: 60px;
 }
 
+.tright {
+    text-align: right;
+    margin-right: 100px;
+}
+
 .middle {
     display :grid;
-    grid-template-columns: auto;
-    grid-template-rows: 120px 120px auto 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px auto auto;
     grid-template-areas: 
     "title ."
     "subheader ."
@@ -63,12 +68,13 @@ body {
 .middleprofil {
     display: grid;
     margin-left: 200px;
+    grid-template-rows: repeat(4,150px auto);
 }
 
 .presentation {
+    white-space: nowrap;
     color :aliceblue;
-    margin-left: 140px;
-    width : 5000px;
+    margin-left: 140px
 }
 
 h1 {
@@ -96,7 +102,7 @@ h1 {
     justify-items: center;
     grid-area: cv;
     display : grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: 50px 30px;
 }
 
@@ -119,16 +125,19 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.leftinfo {
-}
-
-.rightinfo {
-    margin-left: 800px;
-}
-
-.fortytwo {
+#fortytwo {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+#descft {
+    padding-left: 10px;
+}
+
+#compft {
+    padding-left: 10px;
+    border-left: 2px solid #4e4e49;
 }
 
 .borderinfo {
