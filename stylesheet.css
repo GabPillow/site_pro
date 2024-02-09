@@ -1,3 +1,5 @@
+/* Body margin */
+
 body {
     margin: 0;
 }
@@ -9,6 +11,8 @@ body {
 .bodyprofil {
     background-color: #FFFDD0;
 }
+
+/* menu header*/
 
 .header {
     border-radius: 25px;
@@ -42,17 +46,20 @@ body {
     margin-left: 25%;
 }
 
-.titleprofil {
-    white-space: nowrap;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 60px;
+/* Footer */
+
+.credit {
+    height: 200px;
+    background-color: rgb(53, 48, 48);
 }
 
-.tright {
-    text-align: right;
-    margin-right: 100px;
+.footertexte {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*index*/
 
 .middle {
     display :grid;
@@ -63,24 +70,6 @@ body {
     "subheader ."
     "main main"
     "cv cv";
-}
-
-.middleprofil {
-    display: grid;
-    margin-left: 200px;
-    grid-template-rows: repeat(4,150px auto);
-}
-
-.presentation {
-    white-space: nowrap;
-    color :aliceblue;
-    margin-left: 140px
-}
-
-h1 {
-    font-size: 80px;
-    font-family: 'Space Mono';
-    grid-area: title;
 }
 
 .p1 {
@@ -114,15 +103,36 @@ h1 {
     color: antiquewhite;
 }
 
-.credit {
-    height: 200px;
-    background-color: rgb(53, 48, 48);
+.presentation {
+    white-space: nowrap;
+    color :aliceblue;
+    margin-left: 140px
 }
 
-.footertexte {
-    color: aliceblue;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1 {
+    font-size: 80px;
+    font-family: 'Space Mono';
+    grid-area: title;
+}
+
+/* Profil*/
+
+.titleprofil {
+    white-space: nowrap;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.tright {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.middleprofil {
+    display: grid;
+    margin-left: 200px;
+    grid-template-rows: repeat(4,150px auto);
 }
 
 #fortytwo {
