@@ -119,39 +119,58 @@ h1 {
 
 .titleprofil {
     white-space: nowrap;
-    font-family: "Quicksand";
+    font-family: "Space Mono";
     font-weight: bold;
     font-size: 60px;
 }
 
+.titleinfo {
+    white-space: nowrap;
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logocontainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Quicksand";
+}
+
 .tright {
     text-align: right;
-    margin-right: 100px;
 }
 
 .middleprofil {
     display: grid;
     margin-left: 200px;
     grid-template-rows: repeat(4,150px auto);
+    margin-right: 100px;
 }
 
-#fortytwo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+.descriptinfo {
+    font-family: "Quicksand";
+    font-size: 25px;
+    padding-right: 10px;
 }
 
-#descft {
+.containerdescript {
     padding-left: 10px;
 }
 
-#compft {
+.rightsideinfo {
     padding-left: 10px;
     border-left: 2px solid #4e4e49;
 }
 
-.borderinfo {
+.infocontainer {
     border-style: solid;
     border-width: 5px;
     border-radius: 25px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
 }
